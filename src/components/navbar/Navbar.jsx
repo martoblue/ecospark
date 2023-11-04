@@ -1,4 +1,3 @@
-import React from 'react';
 import './NavbarStyles.css';
 import { Link } from 'react-router-dom';
 
