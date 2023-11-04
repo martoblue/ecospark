@@ -1,0 +1,33 @@
+.form_container{
+    width: 30%;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .form_container{
+      width: 45%;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .form_container{
+      width: 65%;
+    }
+  }
+  
+  #boton{
+    background-color: rgb(217, 98, 13);
+    border: none;
+  }
+
+  #boton2{
+    background-color: rgb(217, 98, 13);
+    border: none;
+  }
+
+  #fondo{
+    background-color:#E4E9F3;
+  }
+
+  #fondo2{
+    background-color:#E4E9F3;
+  }

@@ -1,0 +1,81 @@
+.alta{
+    background-color: rgba(142, 133, 171, 0.141);
+    width: 100%vh;
+    
+   padding: 20px 0;
+}
+
+.tamaño{
+width: 450px;
+height: 300px;
+}
+
+
+.centrar{
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.medir{
+   
+    width:  500px;
+    height: 235px;
+   border-radius: 5%;
+   margin-left: 20px;
+   margin-top: 20px;
+   
+    
+}
+.medir1{
+   
+height: 240px;
+border-radius: 5%;
+width: 500px;
+margin-left: 20px;
+margin-top: 20px;
+  
+}
+
+.bajo{
+ background-color: rgba(142, 133, 171, 0.141);
+
+ 
+}
+.img4{
+    border-radius: 5%;
+}
+.img3{
+    border-radius: 5%;
+}
+
+.ajustar{
+ margin: 0;
+}
+
+.rayas{
+   width:90%;
+   height: 59%;
+   background-color: orange;
+   margin-left: 60px;
+   
+  
+}
+
+.titu{
+    background-color: orange;
+    color: white;
+}
+.titu:hover{
+    background-color: rgb(190, 161, 107)
+}
+
+.fondo1{
+    background-color: orange;
+    color: white;
+    width: 160px;
+    height: 40px;
+}
+
+.fondo1:hover{
+ background-color: rgb(190, 161, 107)
+}

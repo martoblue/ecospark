@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Poppins:wght@200;300;400;500;600;700;900&&display=swap');
+
+:root {
+  --main-bg-color: #ff6b00;
+  --main-text-color: #eeedec;
+  --second-bg-color: #eeedec;
+  --second-text-color: #ff6b00;
+  --font-family: 'Poppins', sans-serif;
+  --font-logo: 'Patua One', serif;
+}
+body {
+  font-family: var(--font-family);
+  font-size: 62.5%;
+  color: var(--main-text-color);
+}
+
+.footer {
+  overflow: hidden;
+  background-color: var(--main-bg-color);
+  display: flex;
+  flex-direction: column;
+  color: var(--main-text-color);
+  font-family: var(--font-family);
+}
+
+.container-footer-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 50px 10px;
+}
+.follow-us {
+  font-size: 0.9em;
+}
+.footer-main-container,
+.site-map {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.2em;
+  padding: 1em;
+}
+button.buttonSesion {
+  font-size: 1em;
+}
+
+.site-map {
+  padding: 30px 50px 10px;
+}
+
+.main-content-footer {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  width: 22em;
+  font-size: 1.3em;
+}
+.italic {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.follow-us {
+  display: flex;
+  align-items: center;
+}
+.title-follow-us {
+  font-weight: 600;
+  color: var(--main-text-color);
+}
+span.social-media-footer a {
+  text-decoration: underline;
+}
+
+.content-footer {
+  display: flex;
+  align-items: center;
+}
+.main-content-footer div {
+  margin-bottom: 20px;
+}
+.dropdown-content a,
+.content-footer a,
+.social-media-footer a {
+  float: left;
+  font-size: 16px;
+  color: var(--main-text-color);
+  text-align: center;
+  padding: 8px 15px;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  font-family: var(--font-family);
+  border-radius: 8px;
+}
+.content-footer a {
+  font-size: 1.1em;
+}
+
+.decoration a,
+.terms-and-conditions a {
+  font-size: 0.7em;
+  color: var(--main-text-color);
+  text-align: center;
+  line-height: 2.5;
+  padding: 14px 16px;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+.copy-right {
+  color: var(--main-text-color);
+  font-size: 0.7em;
+}
+.content-left p {
+  font-family: var(--font-logo);
+  font-size: 2.5em;
+  margin: 0px;
+  color: var(--main-text-color);
+}
+
+.dropbtn {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  padding: 8px 15px;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-family: var(--font-family);
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--main-bg-color);
+  min-width: 200px;
+  box-shadow: 2px 2px 11px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 8px;
+  transition: 1s ease-out;
+}
+
+.dropdown-content a:hover,
+.content-footer a:hover {
+  background-color: var(--second-bg-color);
+  color: var(--second-text-color);
+  border-radius: 8px;
+}
+.content-right a:hover {
+  padding: 0;
+  margin: 8px 16px;
+}
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+a:hover {
+  background-color: var(--second-bg-color);
+  color: var(--second-text-color);
+}
+.dropdown:hover .dropbtn {
+  background-color: var(--second-bg-color);
+  color: var(--second-text-color);
+  font-family: var(--font-family);
+}
+
+.buttonSesion {
+  text-align: center;
+  font-size: 1.7em;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  border: 2px solid var(--second-bg-color);
+  border-radius: 8px;
+}
+
+.buttonSesion:hover {
+  background-color: var(--second-bg-color);
+  color: var(--second-text-color);
+}
+
+.decoration ul {
+  list-style-type: none;
+}
+.decoration .title-href,
+element.style,
+p.title-about-footer {
+  font-size: 0.8em;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.mision {
+  font-size: 0.8em;
+  color: var(--main-text-color);
+}
