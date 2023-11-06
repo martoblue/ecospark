@@ -4,6 +4,7 @@ Una organización cuyo propósito es encender la chispa de interés por un mundo
 
 ## To run installs
 
+npm install
 npm install react-router-dom localforage match-sorter sort-by
 npm install react-bootstrap bootstrap
 
