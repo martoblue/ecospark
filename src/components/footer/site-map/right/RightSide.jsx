@@ -1,4 +1,3 @@
-import React from 'react';
 import ListMaker from '../ListMaker';
 import dataRight from './list-right';
 

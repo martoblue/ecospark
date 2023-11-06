@@ -1,5 +1,3 @@
-import React from 'react';
-
 function IconMaker() {
   return (
     <div className='icon-section'>
@@ -42,10 +40,5 @@ function IconMaker() {
     </div>
   );
 }
-// IconMaker.propTypes = {
-//   name: PropTypes.string,
-//   title: PropTypes.string,
-//   img: PropTypes.string,
-// };
 
 export default IconMaker;
