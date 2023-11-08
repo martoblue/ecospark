@@ -6,15 +6,15 @@ function Navbar() {
   return (
 
       <div className='Navbar'>
-      <ul>
-      <li><Link className='nav' to= "/">Inicio</Link></li>
-      <li><Link className='nav' to= "/pregunta">¿Que son?</Link></li>
-      <li><Link className='nav' to= "/timeline">Timeline</Link></li>
-      <li><Link className='nav' to= "/calculadora">Calculadora</Link></li>
-      <li><Link className='nav' to= "/mapa">Mapa</Link></li>
-      <li><Link className='nav' to= "/foro">Foro</Link></li>
-      <li><Link className='nav' to= "/login">Login</Link></li>
-      <li><Link className='nav' to= "/signup">Signup</Link></li>
+      <ul className='rrr'>
+      <li><Link className='navrr' to= "/">Inicio</Link></li>
+      <li><Link className='navrr' to= "/pregunta">¿Que son?</Link></li>
+      <li><Link className='navrr' to= "/timeline">Timeline</Link></li>
+      <li><Link className='navrr' to= "/calculadora">Calculadora</Link></li>
+      <li><Link className='navrr' to= "/mapa">Mapa</Link></li>
+      <li><Link className='navrr' to= "/foro">Foro</Link></li>
+      <li><Link className='navrr' to= "/login">Login</Link></li>
+      <li><Link className='navrr' to= "/signup">Signup</Link></li>
          
       </ul>
     

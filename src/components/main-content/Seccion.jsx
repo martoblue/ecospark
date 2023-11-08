@@ -13,7 +13,7 @@ const Seccion = () => {
     <div className='container1'>
     <div>
     <Navbar />
-     <img src={fondo} className='img-fluid ' alt='' />
+     <img src={fondo} className='img-fluidhh ' alt='' />
      
    </div>
    
@@ -69,7 +69,7 @@ const Seccion = () => {
       <section>
         <div className='row seccion2'>
           <div className='col-6 p-4 '>
-            <img src={imagen4} className='tamaño img-fluid img4' alt='' />
+            <img src={imagen4} className='tamaño img-fluidhh img4' alt='' />
           </div>
 
           <div className='col-6 text-center p-4 '>
@@ -110,9 +110,9 @@ const Seccion = () => {
             <Button />
           </div>
           <div className='col-6 p-4 '>
-            <img src={imagen3} className='tamaño img-fluid img3' alt='' />
+            <img src={imagen3} className='tamaño img-fluidhh img3' alt='' />
           </div>
-          <hr className='rayas' />
+          
         </div>
       </section>
     </div>
