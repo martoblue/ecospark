@@ -5,13 +5,15 @@ import imagen3 from '../assets/img3.webp';
 import Button from '../button/button';
 import fondo from '../assets/IMG-20231102-WA0015.jpg';
 import './seccionStyle.css';
+import Navbar from '../navbar/Navbar'
 
 const Seccion = () => {
   return (
     <div className='container'>
-      <div>
-        <img src={fondo} className='img-fluid' alt='' />
-      </div>
+    <div className='anchoo'>
+   
+      <img src={fondo} className='img-fluid' alt='' />
+    </div>
 
       <section className='alta'>
         <hr className='rayas' />
