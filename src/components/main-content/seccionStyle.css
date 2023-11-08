@@ -1,4 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
 
+.img-fluid{
+    background-size: cover;
+    background-attachment: fixed;
+    margin-left: -4px;
+    
+    
+    
+}
+.Navbar{
+    z-index: 2;
+    position: absolute ;
+  
+    
+}
+ul{
+    list-style: none;
+    display: flex;
+    
+    
+}
+.nav{
+    
+    text-decoration: none;
+    color: white;
+    margin-left: 80px;
+   font-family:Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    font-size:large
+}
+
+  
+.nav:hover{
+color:orange;
+}
 
 .alta{
     background-color: rgba(142, 133, 171, 0.141);
@@ -20,20 +59,20 @@ height: 300px;
 }
 .medir{
    
-    width:  500px;
-    height: 235px;
+    
+    height: 300px;
    border-radius: 5%;
-   margin-left: 20px;
+  
    margin-top: 20px;
-   
+   margin-right: 20px;
     
 }
 .medir1{
    
-height: 240px;
+height:300px;
 border-radius: 5%;
 width: 500px;
-margin-left: 20px;
+
 margin-top: 20px;
   
 }

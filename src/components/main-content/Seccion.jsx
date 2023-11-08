@@ -7,13 +7,16 @@ import fondo from '../assets/IMG-20231102-WA0015.jpg';
 import './seccionStyle.css';
 import Navbar from '../navbar/Navbar'
 
+
 const Seccion = () => {
   return (
-    <div className='container'>
-    <div className='anchoo'>
+    <div className='container1'>
+    <div>
+    <Navbar />
+     <img src={fondo} className='img-fluid ' alt='' />
+     
+   </div>
    
-      <img src={fondo} className='img-fluid' alt='' />
-    </div>
 
       <section className='alta'>
         <hr className='rayas' />
@@ -21,11 +24,11 @@ const Seccion = () => {
           <div className='col '>
             <div className='card'>
               <div className='text-center titu'>
-                <h1>Juntos</h1>
+                <h1>Juntos    </h1>
               </div>
               <img
                 src={imagen}
-                className='card-img-top medir img-fluid '
+                className='card-img-top medir  '
                 alt='...'
               />
               <div className='card-body text-center'>
@@ -46,7 +49,7 @@ const Seccion = () => {
               </div>
               <img
                 src={imagen1}
-                className='card-img-top medir1 img-fluid'
+                className='card-img-top medir1 '
                 alt='...'
               />
               <div className='card-body text-center'>
