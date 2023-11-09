@@ -1,5 +1,4 @@
 import CardMaker from './card/CardMaker';
-import IconMaker from './card/IconMaker';
 import martoImg from '../assets/img/marto.webp';
 import nicolImg from '../assets/img/nicol.webp';
 import panquiImg from '../assets/img/panqui.webp';
@@ -14,8 +13,8 @@ function TeamCards() {
           <h1>Nuestro Equipo</h1>
         </div>
       </div>
-      <div className='row' style={{ width: '100em', padding: '40px 20px' }}>
-        <div className='card-col'>
+      <div className='row' style={{ width: '100%', padding: '40px 20px' }}>
+        <div className='card-col row'>
           <CardMaker
             name={'Nicol Aros'}
             title={'Scrum Master'}
@@ -36,14 +35,6 @@ function TeamCards() {
             title={'Software Developer'}
             img={jhonsonImg}
           />
-        </div>
-      </div>
-      <div className='row' style={{ width: '100em', padding: '0px 20px' }}>
-        <div className='icons-rrss container'>
-          <IconMaker />
-          <IconMaker />
-          <IconMaker />
-          <IconMaker />
         </div>
       </div>
     </div>

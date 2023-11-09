@@ -29,22 +29,22 @@ body {
   padding: 2em 50px 10px;
 }
 .follow-us {
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
 .footer-main-container,
 .site-map {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 1.2em;
-  padding: 1em;
+  font-size: 1.2rem;
+  padding: 2.2em;
 }
 button.buttonSesion {
-  font-size: 1em;
+  font-size: 1.3rem;
 }
 
 .site-map {
-  padding: 30px 50px 10px;
+  padding: 0;
 }
 
 .main-content-footer {
@@ -52,7 +52,7 @@ button.buttonSesion {
   display: flex;
   flex-direction: column;
   width: 22em;
-  font-size: 1.3em;
+  font-size: 1.3rem;
 }
 .italic {
   font-style: italic;
@@ -82,7 +82,7 @@ span.social-media-footer a {
 .content-footer a,
 .social-media-footer a {
   float: left;
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--main-text-color);
   text-align: center;
   padding: 8px 15px;
@@ -92,12 +92,12 @@ span.social-media-footer a {
   border-radius: 8px;
 }
 .content-footer a {
-  font-size: 1.1em;
+  font-size: 1.3rem;
 }
 
 .decoration a,
 .terms-and-conditions a {
-  font-size: 0.7em;
+  font-size: 1rem;
   color: var(--main-text-color);
   text-align: center;
   line-height: 2.5;
@@ -107,11 +107,11 @@ span.social-media-footer a {
 }
 .copy-right {
   color: var(--main-text-color);
-  font-size: 0.7em;
+  font-size: 1rem;
 }
 .content-left p {
   font-family: var(--font-logo);
-  font-size: 2.5em;
+  font-size: 2.5rem;
   margin: 0px;
   color: var(--main-text-color);
 }
@@ -120,7 +120,7 @@ span.social-media-footer a {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
   padding: 8px 15px;
-  font-size: 1.2em;
+  font-size: 1.4rem;
   border: none;
   cursor: pointer;
   text-align: center;
@@ -172,7 +172,7 @@ a:hover {
 
 .buttonSesion {
   text-align: center;
-  font-size: 1.7em;
+  font-size: 1.7rem;
   text-decoration: none;
   display: inline-block;
   transition-duration: 0.4s;
@@ -194,13 +194,60 @@ a:hover {
 .decoration .title-href,
 element.style,
 p.title-about-footer {
-  font-size: 0.8em;
+  font-size: 1.4rem;
   font-weight: 600;
   text-decoration: none;
   color: var(--main-text-color);
 }
 
 .mision {
-  font-size: 0.8em;
+  font-size: 1.3rem;
   color: var(--main-text-color);
+}
+@media (max-width: 1180px) {
+  .decoration a,
+  .terms-and-conditions a {
+    padding: 0;
+  }
+  .follow-us,
+  .footer-main-container,
+  .site-map,
+  button.buttonSesion,
+  .main-content-footer,
+  .main-content-footer div,
+  .dropdown-content a,
+  .content-footer a,
+  .social-media-footer a,
+  .decoration a,
+  .terms-and-conditions a,
+  .copy-right,
+  .content-left p,
+  .dropbtn,
+  .buttonSesion,
+  .decoration .title-href,
+  element.style,
+  p.title-about-footer,
+  .mision {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 750px) {
+  .footer {
+    font-size: small;
+  }
+  .container-footer-header {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+  }
+  .footer-main-container {
+    align-items: start;
+    flex-flow: column-reverse;
+  }
+  .site-map {
+    padding: 0;
+  }
+  .main-content-footer {
+    padding: 1em;
+  }
 }
