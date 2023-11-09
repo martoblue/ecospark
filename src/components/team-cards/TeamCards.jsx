@@ -19,21 +19,33 @@ function TeamCards() {
             name={'Nicol Aros'}
             title={'Scrum Master'}
             img={nicolImg}
+            github='https://github.com/Nicolrayen'
+            linkedin='https://cl.linkedin.com/in/nicol-aros-aros-782556295'
+            mail='nicolaros95@gmail.com'
           />
           <CardMaker
             name={'Luis Martorelli'}
             title={'Software Developer'}
             img={martoImg}
+            github='https://github.com/martoblue'
+            linkedin='https://cl.linkedin.com/in/luis-martorelli/'
+            mail='luismarto8a@gmail.com'
           />
           <CardMaker
             name={'Panqui Acuña'}
             title={'Product Owner'}
             img={panquiImg}
+            github='https://github.com/rdhradha'
+            linkedin='https://www.linkedin.com/in/panquiam/'
+            mail='maeumi.vine@gmail.com'
           />
           <CardMaker
             name={'Jhonson Medina'}
             title={'Software Developer'}
             img={jhonsonImg}
+            github='https://github.com/JhonsonMedina'
+            linkedin='https://www.linkedin.com/in/jhonson-medina-90140a289/'
+            mail='jhonsonamedinah@gmail.com'
           />
         </div>
       </div>
