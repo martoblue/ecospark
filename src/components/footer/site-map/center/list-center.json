@@ -1,18 +1,14 @@
 [
   {
-    "name": "Recursos",
+    "name": "Proyectos Caseros",
     "id": "1"
   },
   {
-    "name": "Proyectos Caseros",
+    "name": "Mapa Interactivo",
     "id": "2"
   },
   {
-    "name": "Mapa Interactivo",
-    "id": "3"
-  },
-  {
     "name": "Calculadora EcoS",
-    "id": "4"
+    "id": "3"
   }
 ]
