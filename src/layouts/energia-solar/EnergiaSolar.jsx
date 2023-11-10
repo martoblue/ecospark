@@ -2,11 +2,14 @@ import imgSolarOne from '../../components/assets/img/solar/solar-img1.png';
 import imgHistoryOne from '../../components/assets/img/solar/Historia-paneles-solares.jpg';
 import imgSolar2 from '../../components/assets/img/solar/energia_solar2.jpg';
 import imgSolar3 from '../../components/assets/img/solar/energia_solar3.jpg';
+import Navbar from '../../components/navbar/Navbar';
+import Footer from '../../components/footer/Footer';
 import './EnergiaSolar.css';
 
 function EnergiaSolar() {
   return (
     <>
+      <Navbar />
       <div className='container'>
         <div className='row'>
           <div className='col-md-12 d-flex justify-content-center p-4 '>
@@ -234,6 +237,7 @@ function EnergiaSolar() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

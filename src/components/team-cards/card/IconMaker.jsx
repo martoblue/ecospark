@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function IconMaker({ github, linkedin, mail }) {
   return (
     <div className='icon-section'>
-      <Link to={github} target='_blank'>
+      <Link to={github} target='_blank' className='a-link-icon'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           width='57'
@@ -18,7 +18,7 @@ function IconMaker({ github, linkedin, mail }) {
           />
         </svg>
       </Link>
-      <Link to={linkedin} target='_blank'>
+      <Link to={linkedin} target='_blank' className='a-link-icon'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           width='62'
@@ -32,7 +32,7 @@ function IconMaker({ github, linkedin, mail }) {
           />
         </svg>
       </Link>
-      <Link to={mail} target='_blank'>
+      <Link to={mail} target='_blank' className='a-link-icon'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           width='64'

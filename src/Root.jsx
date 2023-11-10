@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Root() {
   return (
     <>
-      
       <Seccion />
       <TeamCards />
       <Footer />

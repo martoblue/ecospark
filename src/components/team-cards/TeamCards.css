@@ -100,10 +100,21 @@
 .icon-section {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  padding: 1em;
 }
 svg {
-  margin: 12px;
+  margin: 0.2em;
+}
+svg:hover {
+  filter: brightness(100);
+  scale: 0.9;
+}
+.a-link-icon:hover {
+  background-color: #346cd9c4;
+  color: #ffffff;
+  transition: 0.4s;
+  border-radius: 100%;
 }
 
 @media (max-width: 1140px) {

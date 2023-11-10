@@ -199,6 +199,9 @@ p.title-about-footer {
   text-decoration: none;
   color: var(--main-text-color);
 }
+.title-href:hover {
+  color: var(--second-text-color);
+}
 
 .mision {
   font-size: 1.3rem;
