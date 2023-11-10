@@ -2,16 +2,21 @@ import imagen from '../assets/OIP3.jpg';
 import imagen1 from '../assets/OIP2.jpg';
 import imagen4 from '../assets/images.jpg';
 import imagen3 from '../assets/img3.webp';
-import Button from '../button/button';
 import fondo from '../assets/IMG-20231102-WA0015.jpg';
 import './seccionStyle.css';
+import Navbar from '../navbar/Navbar'
+import { Link } from 'react-router-dom';
+
 
 const Seccion = () => {
   return (
-    <div className='container'>
-      <div>
-        <img src={fondo} className='img-fluid' alt='' />
-      </div>
+    <div className='container1'>
+    <div>
+    <Navbar />
+     <img src={fondo} className='img-fluidhhh ' alt='' />
+     
+   </div>
+   
 
       <section className='alta'>
         <hr className='rayas' />
@@ -19,19 +24,18 @@ const Seccion = () => {
           <div className='col '>
             <div className='card'>
               <div className='text-center titu'>
-                <h1>Juntos</h1>
+                <h1>Juntos    </h1>
               </div>
               <img
                 src={imagen}
-                className='card-img-top medir img-fluid '
+                className='card-img-top medir  '
                 alt='...'
               />
               <div className='card-body text-center'>
-                <h5 className='card-title  '>Card title</h5>
-                <p className='card-text'>
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                <h5 className='card-title  '> Energía Eólica </h5>
+                <p className='card-text justificar'>
+                La energía eólica, dicho de otra forma, es un tipo de energía renovable,
+                 la cual hace uso de los vientos para la generación de energía. 
                 </p>
               </div>
             </div>
@@ -44,15 +48,15 @@ const Seccion = () => {
               </div>
               <img
                 src={imagen1}
-                className='card-img-top medir1 img-fluid'
+                className='card-img-top medir1 '
                 alt='...'
               />
               <div className='card-body text-center'>
-                <h5 className='card-title ajustar '>Card title</h5>
-                <p className='card-text '>
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                <h5 className='card-title ajustar '>Energia Solar</h5>
+                <p className='card-text justificar '>
+                Es la energía generada por el Sol.
+                 Dicha energía, emitida en forma de radiación electromagnética,
+                  constituye la principal fuente de luz y calor de la Tierra.
                 </p>
               </div>
             </div>
@@ -64,15 +68,15 @@ const Seccion = () => {
       <section>
         <div className='row seccion2'>
           <div className='col-6 p-4 '>
-            <img src={imagen4} className='tamaño img-fluid img4' alt='' />
+            <img src={imagen4} className='tamaño img-fluidhh img4' alt='' />
           </div>
 
-          <div className='col-6 text-center p-4 '>
+          <div className='col-6 text-center p-4'>
             <h2>
-              {' '}
+              
               <strong> Energía asequible y no contaminante</strong>
             </h2>
-            <p>
+            <p className='justificara'>
               La energía es fundamental en todos los desafíos y oportunidades a
               los que hace frente el mundo hoy. Toda actividad en la sociedad
               moderna actual requiere energía para operar. Sin embargo, el uso
@@ -82,8 +86,13 @@ const Seccion = () => {
               sostenible es una oportunidad que transforma vidas, economías y el
               planeta.
             </p>
-
-            <Button />
+            
+              <Link to='/timeline' className='ms-2'>
+              <button className='text-center border border-warning titu'><h4>Ver mas</h4></button>  
+              </Link>
+             
+              
+           
           </div>
         </div>
       </section>
@@ -93,21 +102,30 @@ const Seccion = () => {
         <div className='row'>
           <div className='col-6 centrar'>
             <h1 className='text-center'>
-              <strong>¿Qué son las Energías Renovables?</strong>
+              <strong>Evolución Histórica</strong>
             </h1>
-            <p>
-              Son aquellas que provienen de fuentes consideradas inagotables, y
-              que se caracterizan porque en sus procesos de transformación y
-              aprovechamiento no se consumen a escala humana, ya sea por la
-              inmensa cantidad de energía que contienen o porque son capaces de
-              regenerarse en el tiempo
+            <p className='justificar'>
+            En la actualidad, el desarrollo sostenible y la preocupación
+             por el medio ambiente han llevado a un creciente interés en 
+             las energías renovables. Estas fuentes de energía son aquellas
+              que se obtienen de fuentes naturales y se regeneran de forma 
+              continua, como la energía solar, eólica, hidroeléctrica, geotérmica 
+              y biomasa. Sin embargo, este enfoque no es algo nuevo, ya que a lo
+               largo de la historia, la humanidad ha utilizado diversas
+             formas de energías renovables para satisfacer sus necesidades energéticas.
             </p>
-            <Button />
+           
+              <div>
+             <Link to='/timeline' >
+              <button className='text-center border border-warning titu1'><h4>Ver mas</h4></button>  
+              </Link> 
+              </div>
+               
           </div>
           <div className='col-6 p-4 '>
-            <img src={imagen3} className='tamaño img-fluid img3' alt='' />
+            <img src={imagen3} className='tamaño img-fluidhh img3' alt='' />
           </div>
-          <hr className='rayas' />
+          
         </div>
       </section>
     </div>
