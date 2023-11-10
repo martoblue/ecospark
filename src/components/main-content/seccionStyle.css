@@ -10,6 +10,7 @@
     background-size: cover;
     background-attachment: fixed;
     margin-left: -4px;
+    width: 1270px;
 }
 .Navbar{
     z-index: 2;
