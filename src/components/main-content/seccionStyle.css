@@ -23,7 +23,6 @@
   color: white;
   margin-left: 80px;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 25px;
   font-size: large;
 }
 .energias-div {
@@ -125,7 +124,7 @@ a.ms-2.link-energias-boton {
 .titu1 {
   background-color: orange;
   color: white;
-  margin-left: 250px;
+  
 }
 .titu1:hover {
   background-color: rgb(190, 161, 107);

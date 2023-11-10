@@ -10,18 +10,18 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <Link className='navrr' to='/pregunta'>
-            ¿Que son?
+          <Link className='navrr' to='/energia-solar'>
+            Energía Solar 
+          </Link>
+        </li>
+        <li>
+          <Link className='navrr' to='/energia-eolica'>
+            Energía Eólica
           </Link>
         </li>
         <li>
           <Link className='navrr' to='/timeline'>
             Timeline
-          </Link>
-        </li>
-        <li>
-          <Link className='navrr' to='/calculadora'>
-            Calculadora
           </Link>
         </li>
         <li>
