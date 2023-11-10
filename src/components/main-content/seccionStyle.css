@@ -4,10 +4,12 @@
 .img-fluidhh{
     background-size: cover;
     background-attachment: fixed;
+    margin-left: 50px;
+}
+.img-fluidhhh {
+    background-size: cover;
+    background-attachment: fixed;
     margin-left: -4px;
-    
-    
-    
 }
 .Navbar{
     z-index: 2;
@@ -78,7 +80,14 @@ margin-top: 20px;
 .bajo{
  background-color: rgba(142, 133, 171, 0.141);
 
- 
+}
+.justificar{
+    text-align: justify;
+}
+.justificara{
+    text-align: justify;
+    margin-right: 30px;
+    
 }
 .img4{
     border-radius: 5%;
@@ -106,6 +115,18 @@ margin-top: 20px;
 }
 .titu:hover{
     background-color: rgb(190, 161, 107)
+}
+.titu1{
+    background-color: orange;
+    color: white;
+    margin-left: 250px;
+   
+    
+}
+.titu1:hover{
+    background-color: rgb(190, 161, 107);
+    
+    
 }
 
 .fondo1{
