@@ -1,0 +1,27 @@
+import { Chrono } from 'react-chrono'
+import './Timeline_2.css'
+import items from './data'
+
+
+const Timeline = () => {
+ return (
+    <>
+      <div className='Timeline'>
+        <div style={{ width:'100%', heigth: '95vh'}}>
+          <Chrono 
+          items={items} 
+          mode='VERTICAL_ALTERNATING'
+          cardHeight={300}
+          cardWidth={650}
+          mediaHeight={300}
+          scrollable={{ scrollbar: false }}
+          contentDetailsHeight={100}
+          slideShow
+          />
+        </div>
+      </div>
+    </>
+  )
+}
+
+export default Timeline

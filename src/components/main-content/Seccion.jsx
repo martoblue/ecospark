@@ -17,9 +17,9 @@ const Seccion = () => {
         <hr className='rayas' />
         <div className='row row-cols-1 row-cols-md-2 g-4'>
           <div className='col-md-6 '>
-            <div className='card'>
-              <div className='text-center titu'>
-                <h1>Juntos </h1>
+            <div className='cardjuntos'>
+              <div className='text-center'>
+                <h1 className='juntos'> Juntos </h1>
               </div>
               <img src={imagen} className='card-img-top medir  ' alt='...' />
               <div className='card-body text-center'>
@@ -34,8 +34,8 @@ const Seccion = () => {
           </div>
 
           <div className='col-md-6 '>
-            <div className='card'>
-              <div className='text-center titu'>
+            <div className='cardconocer'>
+              <div className='text-center'>
                 <h1>Conocer</h1>
               </div>
               <img src={imagen1} className='card-img-top medir1 ' alt='...' />

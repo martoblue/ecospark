@@ -47,9 +47,10 @@
 .tamaño {
   width: 100%;
   height: auto;
-  border-radius: 5%;
-  padding: 1em;
+  border-radius: 10%;
+  padding: 10px 20px;
   height: 350px;
+  border: none;
 }
 .tamaño-responsive {
   width: 100%;
@@ -116,23 +117,32 @@ a.ms-2.link-energias-boton {
 }
 
 .titu {
-  background-color: orange;
+  background-color:#FF6B00;
   color: white;
+  padding: 10px 20px; 
+  border-radius: 30px; 
+  border: none;
+  cursor: pointer;
 }
 .titu:hover {
   background-color: rgb(190, 161, 107);
+
 }
 .titu1 {
-  background-color: orange;
+  background-color: #FF6B00;
   color: white;
+  padding: 10px 20px; 
+  border-radius: 30px; 
+  border: none;
+  cursor: pointer;
   
 }
-.titu1:hover {
+.titu1:hover { 
   background-color: rgb(190, 161, 107);
 }
 
 .fondo1 {
-  background-color: orange;
+  background-color: #FF6B00;
   color: white;
   width: 160px;
   height: 40px;
@@ -140,4 +150,15 @@ a.ms-2.link-energias-boton {
 
 .fondo1:hover {
   background-color: rgb(190, 161, 107);
+}
+.juntos {
+  color:black;
+  background-color: #E4E9F3;
+  
+}
+.cardjuntos {
+  background-color: #E4E9F3;
+}
+.cardconocer {
+  background-color: #E4E9F3;
 }

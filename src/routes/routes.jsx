@@ -3,9 +3,9 @@ import Login from '../layouts/login-signup/Login';
 import Signup from '../layouts/login-signup/Signup';
 import Root from '../Root';
 import ErrorPage from '../../error-page';
-import TimeLine from '../components/timeline/timeline';
 import EnergiaEolica from '../layouts/energia-eolica/EnergiaEolica';
 import EnergiaSolar from '../layouts/energia-solar/EnergiaSolar';
+import Timeline from '../components/timeline_2/Timeline_2';
 
 const routes = createBrowserRouter([
   {
@@ -23,7 +23,7 @@ const routes = createBrowserRouter([
   },
   {
     path: '/timeline',
-    element: <TimeLine />,
+    element: <Timeline />
   },
   {
     path: '/energia-eolica',
