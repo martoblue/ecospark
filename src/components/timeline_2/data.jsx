@@ -6,7 +6,7 @@ const items = [
           name: "foto efecto fotovoltaico",
           source: {
             url:
-              "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Edmond_Becquerel_by_Nadar.jpg/1200px-Edmond_Becquerel_by_Nadar.jpg" 
+              "https://upload.wikimedia.org/wikipedia/commons/8/8e/Alexandre_Edmond_Becquerel%2C_by_Pierre_Petit.jpg?Edmond_Becquerel1962676" 
           },
           type: "IMAGE"
         },

@@ -11,9 +11,9 @@ const Timeline = () => {
           <Chrono 
           items={items} 
           mode='VERTICAL_ALTERNATING'
-          cardHeight={300}
+          cardHeight={500}
           cardWidth={650}
-          mediaHeight={300}
+          mediaHeight={500}
           scrollable={{ scrollbar: false }}
           contentDetailsHeight={100}
           slideShow
