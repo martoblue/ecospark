@@ -3,7 +3,7 @@ import Navbar from '../../components/navbar/Navbar';
 import './login-signup-style.css';
 import { useEffect, useState } from 'react';
 import { useNavigate} from 'react-router-dom';
-import React from 'react';
+
 
 function Signup() {
   //agregar constante para union backend  1ERA parte
@@ -62,7 +62,7 @@ const handleSubmit = () => {
     setLastName("");
     setEmail("");
     setPassword("");*/
-    if(data.status === 201) // se ingresa luego de crear la constante linea 13
+    if(data.status === 201) 
     setUserCreate(true);
   })
   .catch((error) => {
