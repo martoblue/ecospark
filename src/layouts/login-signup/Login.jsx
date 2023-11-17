@@ -126,16 +126,17 @@ useEffect(() => {
           <div>
             {localStorage.getItem("user") !== null && (
               <div className='fondo-backend'> 
-                <p className='text-center'><strong>Bienvenido(a), a</strong></p>
-                <h5 className='text-center'>"Ecospark"</h5>
-                <h5 className='text-center'><strong>{userLocal.name}   {userLocal.lastName}</strong></h5>
+                <p className='text-center'><strong>Bienvenido(a) {userLocal.name}   {userLocal.lastName}</strong></p>
+                <p className='justi-textosession'>"A continuación...serás redireccionado a la trayectoria de nuestra misión, donde podrás observar
+                  los grandes avances que ha tenido a lo largo del tiempo. Disfruta el viaje"</p>
+                <Link  to='/timeline'><p className='text-center'>¡Ingresa AQUI!</p></Link>
               </div>
             )}
           </div>
        <div className='Desconectar-sesion'>
        <button type='button' className='btn btn-primary' onClick={handleLogout}>
          Desconectar </button>
-
+         
        </div>
         
 
@@ -149,7 +150,7 @@ useEffect(() => {
 
     
     </>
-  );
+  )
 }
 
 export default Login;
