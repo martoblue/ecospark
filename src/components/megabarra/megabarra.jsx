@@ -1,9 +1,14 @@
-import './NavbarStyles.css';
-import { Link } from 'react-router-dom';
-function Navbar() {
-  return (
-    <div className='Navbar row'>
-      <ul className='rrr '>
+import React from "react"
+import { Link } from "react-router-dom"
+
+
+const Megabarra = () => {
+    return (
+<>
+
+
+<div className='timeline-fondobarra'>
+      <ul className='rrr'>
         <li>
           <Link className='navrr' to='/'>
             Inicio
@@ -24,7 +29,8 @@ function Navbar() {
             Timeline
           </Link>
         </li>
-         <li>
+       
+        <li>
           <Link className='navrr' to='/login'>
             Login
           </Link>
@@ -35,8 +41,10 @@ function Navbar() {
           </Link>
         </li>
       </ul>
-    </div>
-  );
-}
+      </div>
 
-export default Navbar;
+</>
+)
+
+}
+export default Megabarra

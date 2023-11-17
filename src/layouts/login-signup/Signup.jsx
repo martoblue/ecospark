@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import Navbar from '../../components/navbar/Navbar';
 import './login-signup-style.css';
 import { useEffect, useState } from 'react';
 import { useNavigate} from 'react-router-dom';
@@ -80,7 +79,7 @@ useEffect(() => {
 
   return (
     <>
-      <Navbar />
+      
       <div
         id='fondo2'
         className='signup template d-flex justify-content-center align-items-center vh-100'
@@ -137,6 +136,11 @@ useEffect(() => {
               </Link>
             </p>
           </form>
+          <button type='button' className='btn btn-primary color-individual3' >
+         <Link className='color-individual ' to='/'>
+           Ir a Inicio
+          </Link> </button>
+       
         </div>
       </div>
     </>

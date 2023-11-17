@@ -91,7 +91,7 @@ const items = [
         },
         cardSubtitle: `La energia Eolica en Francia crecio considerablemente generando mas de 10,000MW`,
       },
-    
+      
 ]
 
 export default items

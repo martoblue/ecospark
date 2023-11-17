@@ -1,7 +1,8 @@
 import './login-signup-style.css';
 import { Link } from 'react-router-dom';
-import Navbar from '../../components/navbar/Navbar';
 import { useEffect, useState } from 'react';
+import { Button } from 'bootstrap';
+
 
 function Login() {
 
@@ -74,7 +75,6 @@ useEffect(() => {
   return (
     <>
 
-  <Navbar />
       <div
         id='fondo'
         className='login template d-flex justify-content-center align-items-center vh-100'
@@ -127,8 +127,8 @@ useEffect(() => {
             {localStorage.getItem("user") !== null && (
               <div className='fondo-backend'> 
                 <p className='text-center'><strong>Bienvenido(a) {userLocal.name}   {userLocal.lastName}</strong></p>
-                <p className='justi-textosession'>"A continuación...serás redireccionado a la trayectoria de nuestra misión, donde podrás observar
-                  los grandes avances que ha tenido a lo largo del tiempo. Disfruta el viaje"</p>
+                <p className='justi-textosession'>"A continuación...serás redireccionado a la trayectoria de nuestro proyecto, donde podrás observar
+                  los grandes avances que hemos tenido a lo largo del tiempo. Disfruta el viaje"</p>
                 <Link  to='/timeline'><p className='text-center'>¡Ingresa AQUI!</p></Link>
               </div>
             )}
@@ -136,7 +136,13 @@ useEffect(() => {
        <div className='Desconectar-sesion'>
        <button type='button' className='btn btn-primary' onClick={handleLogout}>
          Desconectar </button>
-         
+         <button type='button' className='btn btn-primary color-individual2' >
+         <Link className='color-individual' to='/'>
+           Ir a Inicio
+          </Link> </button>
+       
+
+        
        </div>
         
 

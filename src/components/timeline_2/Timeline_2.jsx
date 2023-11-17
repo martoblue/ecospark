@@ -1,11 +1,16 @@
 import { Chrono } from 'react-chrono'
 import './Timeline_2.css'
 import items from './data'
+import Megabarra from '../megabarra/megabarra'
+
 
 
 const Timeline = () => {
  return (
     <>
+    
+    <Megabarra />
+
       <div className='Timeline'>
         <div style={{ width:'100%', heigth: '95vh'}}>
           <Chrono 
@@ -18,8 +23,9 @@ const Timeline = () => {
           contentDetailsHeight={100}
           slideShow
           />
-        </div>
+         </div>
       </div>
+      
     </>
   )
 }

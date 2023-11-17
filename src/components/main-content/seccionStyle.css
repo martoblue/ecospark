@@ -19,10 +19,14 @@
   display: flex;
   padding-top: 15px;
 }
+.timeline-fondobarra{
+  background-color: blue;
+  margin-bottom: -15px;
+}
 .navrr {
   text-decoration: none;
   color: white;
-  margin-left: 80px;
+  margin-left: 110px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: large;
 }
