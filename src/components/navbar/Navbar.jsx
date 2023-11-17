@@ -1,6 +1,10 @@
 import './NavbarStyles.css';
 import { Link } from 'react-router-dom';
+
 function Navbar() {
+
+ 
+
   return (
     <div className='Navbar row'>
       <ul className='rrr '>
@@ -34,6 +38,10 @@ function Navbar() {
             Signup
           </Link>
         </li>
+
+        
+         
+
       </ul>
     </div>
   );

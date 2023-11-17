@@ -69,12 +69,6 @@ console.error("error:", error);
   })
 }
 
-useEffect(() => {
-  if(userCreate){
-     navigate("/login");    //3/3 para redireccionar el usuario al login si su verificacion es correcta
-  }
-},[navigate, userCreate]);
-
 
 
   return (

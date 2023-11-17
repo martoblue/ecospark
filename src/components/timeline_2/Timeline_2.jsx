@@ -13,16 +13,23 @@ const Timeline = () => {
 
       <div className='Timeline'>
         <div style={{ width:'100%', heigth: '95vh'}}>
-          <Chrono 
-          items={items} 
-          mode='VERTICAL_ALTERNATING'
-          cardHeight={500}
-          cardWidth={650}
-          mediaHeight={500}
-          scrollable={{ scrollbar: false }}
+        
+        <Chrono 
+            
+          items={items}
+           mode='VERTICAL_ALTERNATING'
+           cardHeight={500}
+           cardWidth={650}
+           mediaHeight={500}
+           scrollable={{ scrollbar: false }}
           contentDetailsHeight={100}
           slideShow
+         
           />
+         
+         
+         
+           
          </div>
       </div>
       

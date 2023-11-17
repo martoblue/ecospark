@@ -25,17 +25,19 @@
   }
 
   #fondo{
-    background-color:#E4E9F3;
+    background: url("../../components/assets/IMG-20231102-WA0015.jpg")no-repeat;
+    margin-left: -5px
   }
-
+  
   #fondo2{
-    background-color:#E4E9F3;
+    background: url("../../components/assets/IMG-20231102-WA0015.jpg")no-repeat;
+    margin-left: -5px
   }
   .fondo-backend{
     background-color: #E4E9F3 ;
   }
   .Desconectar-sesion{
-    text-align: center;
+    text-align: right;
   }
   .justi-textosession{
     text-align: justify;
@@ -46,8 +48,13 @@
    
   }
   .color-individual2{
-    margin-left: 40px;
+   margin-top: -65px;
+    
   }
  .color-individual3{
   margin-left: 110px;
  }
+ .bgfondoi{
+ background-color: aqua;
+ }
+ 
