@@ -6,6 +6,7 @@ import ErrorPage from '../../error-page';
 import EnergiaEolica from '../layouts/energia-eolica/EnergiaEolica';
 import EnergiaSolar from '../layouts/energia-solar/EnergiaSolar';
 import Timeline from '../components/timeline_2/Timeline_2';
+import App from '../components/noticias/App';
 
 const routes = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const routes = createBrowserRouter([
     path: '/energia-solar',
     element: <EnergiaSolar />,
   },
+  {
+    path: '/noticias',
+    element: <App />,
+  },  
 ]);
 
 export default routes;

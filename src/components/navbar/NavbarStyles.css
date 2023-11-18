@@ -2,3 +2,26 @@
 }
 .list-navbar-sticky {
 }
+
+/* NavbarStyles.css */
+.Navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fd7e14;
+    color: #ffffff;
+  }
+  
+  .rrr {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .navrr {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
