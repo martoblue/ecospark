@@ -38,6 +38,11 @@ function Navbar() {
             Signup
           </Link>
         </li>
+        <li>
+          <Link className='navrr' to='/noticias'>
+            Noticias
+          </Link>
+        </li>        
 
         
          
