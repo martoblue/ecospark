@@ -8,7 +8,6 @@ import { useEffect, useState } from 'react';
 function Login() {
 
 const[email, setEmail] = useState("");
-const[password, setPassword] = useState("");
 const [user, setUser] = useState ({});
 const [userLocal, setUserLocal] = useState({});
  
@@ -17,9 +16,7 @@ const [userLocal, setUserLocal] = useState({});
 const handleEmail = (e) => {
   setEmail(e.target.value);
 }
-const handlePassword = (e) => {
-  setPassword(e.target.value);
-}
+
 
 const handleLogout = () => {
   localStorage.removeItem("user");
@@ -35,8 +32,6 @@ const handleSubmit = () => {
 
   
 
-
-
 const user = {
   "email": email,
   "password": password
@@ -47,8 +42,8 @@ document.getElementById("email").value = "";
 document.getElementById("password").value = "";
 */
 
-fetch("http://localhost:8080/api/v1/login", {
-    method: "POST",
+fetch("http://localhost:8080/api/v1/update/:iduser", {
+    method: "PUT",
     headers: {
       "Content-Type": "application/json"
     },
@@ -91,25 +86,7 @@ useEffect(() => {
                 onChange={handleEmail}
               />
             </div>
-            <div className='mb-2'>
-              <label className='color-fondo-login' htmlFor='password '>Contraseña</label>
-              <input
-                type='password'
-                placeholder='Ingrese su contraseña'
-                className='form-control'
-                onChange={handlePassword}
-              />
-            </div>
-            <div className='mb-2'>
-              <input
-                type='checkbox'
-                className='custom-control custom-checkbox'
-                id='check'
-              />
-              <label htmlFor='check' className='custom-input-label ms-2 color-fondo-login'>
-                Recordarme
-              </label>
-            </div>
+           
             <div className='d-grid'>
               <button type='button' id='boton' className='btn btn-primary' onClick={handleSubmit}>
                 Ingresar
@@ -123,27 +100,14 @@ useEffect(() => {
             </p>
           </form>
 
-          <div>
-            {localStorage.getItem("user") !== null && (
-              <div className='fondo-backend'> 
-                <p className='text-center'><strong>Bienvenido(a) {userLocal.name}   {userLocal.lastName}</strong></p>
-                <p className='justi-textosession'>"A continuación.Verás la trayectoria de nuestro proyecto, donde podrás observar
-                  los grandes avances que hemos tenido a lo largo del tiempo. Disfruta el viaje"</p>
-                 <Link  to='/timeline'><p className='text-center'>¡Ingresa AQUI!</p></Link>
-                 <div className='Desconectar-sesion'>
-                 <button type='button' className='btn btn-primary' onClick={handleLogout}>
-                 Desconectar </button>
-              </div>
-              </div>
-            )}
             <button type='button' className='btn btn-primary color-individual2' >
          <Link className='color-individual' to='/'>
            Ir a Inicio
           </Link> </button>
           </div>
-       
-        </div>
-      </div>
+          
+     </div>
+    
       
   
       
