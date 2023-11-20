@@ -2,12 +2,12 @@
   {
     "name": "Proyectos Caseros",
     "id": "1",
-    "ruta": "#"
+    "ruta": "/proyectos-caseros"
   },
   {
     "name": "Time Line",
     "id": "2",
-    "ruta": "timeline"
+    "ruta": "/timeline"
   },
   {
     "name": "Calculadora EcoS",
