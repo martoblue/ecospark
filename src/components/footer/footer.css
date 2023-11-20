@@ -160,7 +160,7 @@ span.social-media-footer a {
   display: flex;
   flex-direction: column;
 }
-a:hover {
+.anchor-footer:hover {
   background-color: var(--second-bg-color);
   color: var(--second-text-color);
 }

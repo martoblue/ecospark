@@ -6,7 +6,8 @@ import ErrorPage from '../../error-page';
 import EnergiaEolica from '../layouts/energia-eolica/EnergiaEolica';
 import EnergiaSolar from '../layouts/energia-solar/EnergiaSolar';
 import Timeline from '../components/timeline_2/Timeline_2';
-import App from '../components/noticias/App';
+import Noticias from '../layouts/Noticias/Noticias';
+import AboutUs from '../layouts/about-us/AboutUs';
 
 const routes = createBrowserRouter([
   {
@@ -24,7 +25,7 @@ const routes = createBrowserRouter([
   },
   {
     path: '/timeline',
-    element: <Timeline />
+    element: <Timeline />,
   },
   {
     path: '/energia-eolica',
@@ -36,8 +37,12 @@ const routes = createBrowserRouter([
   },
   {
     path: '/noticias',
-    element: <App />,
-  },  
+    element: <Noticias />,
+  },
+  {
+    path: '/about-us',
+    element: <AboutUs />,
+  },
 ]);
 
 export default routes;

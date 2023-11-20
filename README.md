@@ -7,7 +7,8 @@ Una organización cuyo propósito es encender la chispa de interés por un mundo
 1. npm install
 2. npm install react-router-dom localforage match-sorter sort-by
 3. npm install react-bootstrap bootstrap
-4. npm run dev
+4. npm install --save chrono-node
+5. npm run dev
 
 ## React + Vite
 

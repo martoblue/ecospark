@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
 // Componentes Propios //
-import Header from './components/Header';
-import Noticias from './components/Noticias';
-import Navbar from '@components/navbar/navbar';
+import Navbar from '../../components/navbar/Navbar';
+import Footer from '../../components/footer/Footer';
+import NoticiasFilter from '../../components/noticias/NoticiasFilter';
+import { Component } from 'react';
 
-class App extends Component {
+class Noticias extends Component {
   state = {
     noticias: [],
   };
@@ -32,16 +32,16 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <Header />
+      <>
         <Navbar />
-        <div className="container">
+        <div className='container mt-5'>
           {/* Corrige la propiedad 'Noticias' a 'noticias' */}
-          <Noticias noticias={this.state.noticias} />
+          <NoticiasFilter noticias={this.state.noticias} />
         </div>
-      </div>
+        <Footer />
+      </>
     );
   }
 }
 
-export default App;
+export default Noticias;

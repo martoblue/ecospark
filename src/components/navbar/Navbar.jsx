@@ -1,55 +1,62 @@
 import './NavbarStyles.css';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import DropdownEnergies from './DropdownEnergies';
 
-function Navbar() {
+function Navbar({ text }) {
+  window.onscroll = function () {
+    scrollFunction();
+  };
 
- 
-
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      document.getElementById('navbar').style.backgroundColor = '#ff6b00';
+    } else {
+      document.getElementById('navbar').style.backgroundColor = 'transparent';
+    }
+  }
   return (
-    <div className='Navbar row'>
-      <ul className='rrr '>
+    <div
+      id={text ? 'navbar' : text}
+      className={text ? `Navbar ${text}` : 'Navbar section-navbar'}
+    >
+      <ul className='main-navbar-list'>
         <li>
-          <Link className='navrr' to='/'>
+          <Link className='anchor-navbar' to='/'>
             Inicio
           </Link>
         </li>
+        <DropdownEnergies />
         <li>
-          <Link className='navrr' to='/energia-solar'>
-            Energía Solar 
-          </Link>
-        </li>
-        <li>
-          <Link className='navrr' to='/energia-eolica'>
-            Energía Eólica
-          </Link>
-        </li>
-        <li>
-          <Link className='navrr' to='/timeline'>
+          <Link className='anchor-navbar' to='/timeline'>
             Timeline
           </Link>
         </li>
-         <li>
-          <Link className='navrr' to='/login'>
+        <li>
+          <Link className='anchor-navbar' to='/noticias'>
+            Noticias
+          </Link>
+        </li>
+        <li>
+          <Link className='anchor-navbar' to='/login'>
             Login
           </Link>
         </li>
         <li>
-          <Link className='navrr' to='/signup'>
+          <Link className='anchor-navbar' to='/signup'>
             Signup
           </Link>
         </li>
-        <li>
-          <Link className='navrr' to='/noticias'>
-            Noticias
-          </Link>
-        </li>        
-
-        
-         
-
       </ul>
     </div>
   );
 }
+
+Navbar.propTypes = {
+  text: PropTypes.string,
+};
 
 export default Navbar;

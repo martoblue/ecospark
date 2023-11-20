@@ -9,9 +9,23 @@ const FooterHeader = () => {
           <p>EcoSpark</p>
         </div>
         <div className='content-center content-footer'>
-          <Link to={'/'}>Inicio</Link>
-          <Link to={'/'}>Nosotros</Link>
-          <Link to={'/'}>Foro</Link>
+          <Link
+            to={'/'}
+            onClick={() => {
+              window.scroll(0, 0);
+            }}
+          >
+            Inicio
+          </Link>
+          <a href='#about-us'>Nosotros</a>
+          <Link
+            to={'/'}
+            onClick={() => {
+              window.scroll(0, 0);
+            }}
+          >
+            Foro
+          </Link>
           <DropdownResources />
         </div>
 

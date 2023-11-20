@@ -1,6 +1,6 @@
 import AboutUsFooter from './AboutUsFooter.jsx';
 import FollowUsFooter from './FollowUsFooter.jsx';
-import TermsAndCondit from './TermsAndCondit.jsx';
+// import TermsAndCondit from './TermsAndCondit.jsx';
 import CopyRight from './CopyRight.jsx';
 
 const MainContentFooter = () => {
@@ -9,7 +9,7 @@ const MainContentFooter = () => {
       <div className='main-content-footer'>
         <AboutUsFooter />
         <FollowUsFooter />
-        <TermsAndCondit />
+        {/* <TermsAndCondit /> */}
         <CopyRight />
       </div>
     </>

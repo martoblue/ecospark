@@ -3,13 +3,13 @@ import dataLeft from './list-left';
 
 const LeftSide = () => {
   const dataLefts = dataLeft.map((prop) => (
-    <ListMaker key={prop.id} name={prop.name} />
+    <ListMaker key={prop.id} name={prop.name} ruta={prop.ruta} />
   ));
   return (
     <>
       <ul>
         <li>
-          <a href='#' className='title-href'>
+          <a href='#' className='title-href anchor-footer'>
             Inicio
           </a>
         </li>

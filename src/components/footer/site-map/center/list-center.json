@@ -1,14 +1,17 @@
 [
   {
     "name": "Proyectos Caseros",
-    "id": "1"
+    "id": "1",
+    "ruta": "#"
   },
   {
-    "name": "Mapa Interactivo",
-    "id": "2"
+    "name": "Time Line",
+    "id": "2",
+    "ruta": "timeline"
   },
   {
     "name": "Calculadora EcoS",
-    "id": "3"
+    "id": "3",
+    "ruta": "#"
   }
 ]

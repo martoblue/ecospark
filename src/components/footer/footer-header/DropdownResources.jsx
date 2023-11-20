@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function DropdownResources() {
   return (
     <div className='dropdown'>
@@ -5,9 +7,21 @@ function DropdownResources() {
         Recursos <i className='fa fa-caret-down'></i>
       </button>
       <div className='dropdown-content'>
-        <a href='#'>Proyectos Caseros</a>
-        <a href='#'>Mapa Interactivo</a>
-        <a href='#'>Calculadora EcoS</a>
+        <a href='#' className='anchor-footer'>
+          Proyectos Caseros
+        </a>
+        <Link
+          to='/timeline'
+          className='anchor-footer'
+          onClick={() => {
+            window.scroll(0, 0);
+          }}
+        >
+          Time Line
+        </Link>
+        <a href='#' className='anchor-footer'>
+          Calculadora EcoS
+        </a>
       </div>
     </div>
   );

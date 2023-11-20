@@ -7,7 +7,7 @@ import './TeamCards.css';
 
 function TeamCards() {
   return (
-    <div className='team-container container-fluid'>
+    <div id='about-us' className='team-container container-fluid'>
       <div className='row' style={{ padding: '40px 20px' }}>
         <div className='container header-team'>
           <h1>Nuestro Equipo</h1>

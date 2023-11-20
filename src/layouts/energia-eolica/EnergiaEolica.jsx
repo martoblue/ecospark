@@ -3,16 +3,16 @@ import imgHistoryOne from '../../components/assets/img/eolica/historia-eolica.jp
 import img2 from '../../components/assets/img/eolica/parque-eolico2.jpg';
 import img3 from '../../components/assets/img/eolica/parque-eolico3.jpg';
 import './EnergiaEolica.css';
-import Megabarra from '../../components/megabarra/megabarra'
+import Navbar from '../../components/navbar/Navbar';
 
 import Footer from '../../components/footer/Footer';
 
 function EnergiaEolica() {
   return (
     <>
-      <Megabarra />
+      <Navbar />
 
-      <div className='container'>
+      <div className='container mt-5'>
         <div className='row'>
           <div className='col-md-12 d-flex justify-content-center p-4 '>
             <h1>ENERGÍA EÓLICA</h1>

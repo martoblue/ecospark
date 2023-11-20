@@ -1,18 +1,17 @@
 [
   {
-    "name": "Nosotros",
-    "id": "4"
-  },
-  {
     "name": "Noticias",
-    "id": "5"
+    "id": "5",
+    "ruta": "/noticias"
   },
   {
     "name": "Videos del día",
-    "id": "6"
+    "id": "6",
+    "ruta": "#"
   },
   {
     "name": "Desarrolladores",
-    "id": "7"
+    "id": "7",
+    "ruta": "/about-us"
   }
 ]

@@ -2,7 +2,9 @@ const TermsAndCondit = () => {
   return (
     <>
       <div className='terms-and-conditions'>
-        <a href='#'>Términos y condiciones</a>
+        <a href='#' className='anchor-footer'>
+          Términos y condiciones
+        </a>
       </div>
     </>
   );

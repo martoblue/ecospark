@@ -1,16 +1,25 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
-function ListMaker({ name }) {
+function ListMaker({ name, ruta }) {
   return (
     <li>
-      <a href='#' key={name}>
+      <Link
+        to={`${ruta}`}
+        key={name}
+        className='anchor-footer'
+        onClick={() => {
+          window.scroll(0, 0);
+        }}
+      >
         {name}
-      </a>
+      </Link>
     </li>
   );
 }
 ListMaker.propTypes = {
   name: PropTypes.string,
   index: PropTypes.number,
+  ruta: PropTypes.string,
 };
 export default ListMaker;

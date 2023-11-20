@@ -4,13 +4,13 @@ import imgSolar2 from '../../components/assets/img/solar/energia_solar2.jpg';
 import imgSolar3 from '../../components/assets/img/solar/energia_solar3.jpg';
 import Footer from '../../components/footer/Footer';
 import './EnergiaSolar.css';
-import Megabarra from '../../components/megabarra/megabarra';
+import Navbar from '../../components/navbar/Navbar';
 
 function EnergiaSolar() {
   return (
     <>
-      <Megabarra />
-      <div className='container'>
+      <Navbar />
+      <div className='container mt-5'>
         <div className='row'>
           <div className='col-md-12 d-flex justify-content-center p-4 '>
             <h1>ENERGÍA SOLAR</h1>

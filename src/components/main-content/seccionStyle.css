@@ -1,34 +1,64 @@
-.img-fluidhh {
-  background-size: cover;
-  background-attachment: fixed;
-  margin-left: 50px;
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Poppins:wght@200;300;400;500;600;700;900&&display=swap');
+
+:root {
+  --main-bg-color: #ff6b00;
+  --main-text-color: #eeedec;
+  --second-bg-color: #eeedec;
+  --white-color: #fff;
+  --second-text-color: #ff6b00;
+  --black-color: #2a2020;
+  --font-family: 'Poppins', sans-serif;
+  --font-logo: 'Patua One', serif;
+  --grey-color: #e4e9f3;
 }
-.img-fluidhhh {
-  background-size: cover;
-  background-attachment: fixed;
+/* .TimelineControlContainer-sc-cif21b-4.fljXJB {
+  position: fixed;
+  top: 55px;
+  z-index: 100;
+  left: 44vw;
+} */
+body,
+.main-container {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
   width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li,
+p,
+section,
+div {
+  font-family: 'Poppins', sans-serif;
+}
+.main.div {
+  height: 100vh;
+}
+.img-fondo {
+  background-size: cover;
+  background-attachment: fixed;
   overflow: hidden;
-}
-.Navbar {
-  z-index: 2;
+  margin-top: 0;
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+  z-index: 5;
   position: absolute;
-  margin-top: 15px;
+  left: 0;
 }
-.rrr {
-  list-style: none;
-  display: flex;
-  padding-top: 15px;
-}
-.timeline-fondobarra{
-  background-color: #FF6B00;
-  margin-bottom: -15px;
-}
-.navrr {
-  text-decoration: none;
-  color: white;
-  margin-left: 110px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: large;
+.logo-ecopark {
+  position: absolute;
+  z-index: 5;
+  left: 2.5rem;
+  top: 3rem;
+  width: 20rem;
 }
 .energias-div {
   text-align: center !important;
@@ -37,31 +67,22 @@
   align-items: center;
   justify-content: space-around;
 }
-
-.navrr:hover {
-  color: orange;
-}
-
 .alta {
   background-color: rgba(142, 133, 171, 0.141);
-  width: 100%vh;
-
+  width: 100%;
   padding: 20px 0;
 }
 
-.tamaño {
+.row.row-cols-1.row-cols-md-2.g-4,
+.row.seccion2 {
   width: 100%;
-  height: auto;
-  border-radius: 10%;
-  padding: 10px 20px;
-  height: 350px;
-  border: none;
 }
+
 .tamaño-responsive {
   width: 100%;
   height: auto;
   display: none;
-  border-radius: 5%;
+  border-radius: 30px;
 }
 @media (max-width: 750px) {
   .tamaño-responsive-none {
@@ -74,26 +95,48 @@
     height: 8em;
   }
 }
-
+.main-div {
+  height: 100vh;
+}
 .centrar {
   padding: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+}
+.justificar {
+  width: 90%;
+  font-size: 1.2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  margin: 0;
+}
+.text-jc {
+  width: 95%;
+  font-size: 1.4rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  margin: 0;
+}
+.box-img {
+  width: 100%;
+  height: 400px;
+  padding: 1rem;
+}
+.card-section-about {
+  height: 100%;
+  padding: 2em;
+  background-color: var(--grey-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .medir {
-  height: 300px;
-  border-radius: 5%;
-
-  margin-top: 20px;
-  margin-right: 20px;
-}
-.medir1 {
-  height: 300px;
-  border-radius: 5%;
-  width: 500px;
-
-  margin-top: 20px;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 a.ms-2.link-energias-boton {
   width: auto;
@@ -105,15 +148,11 @@ a.ms-2.link-energias-boton {
 .bajo {
   background-color: rgba(142, 133, 171, 0.141);
 }
-.justificar {
-  text-align: justify;
-  max-width: 600px;
-}
 
 .ajustar {
   margin: 0;
+  padding: 0.5em;
 }
-
 .rayas {
   width: 90%;
   height: 59%;
@@ -122,32 +161,30 @@ a.ms-2.link-energias-boton {
 }
 
 .titu {
-  background-color:#FF6B00;
+  background-color: #ff6b00;
   color: white;
-  padding: 10px 20px; 
-  border-radius: 30px; 
+  padding: 10px 20px;
+  border-radius: 30px;
   border: none;
   cursor: pointer;
 }
 .titu:hover {
   background-color: rgb(190, 161, 107);
-
 }
 .titu1 {
-  background-color: #FF6B00;
+  background-color: #ff6b00;
   color: white;
-  padding: 10px 20px; 
-  border-radius: 30px; 
+  padding: 10px 20px;
+  border-radius: 30px;
   border: none;
   cursor: pointer;
-  
 }
-.titu1:hover { 
+.titu1:hover {
   background-color: rgb(190, 161, 107);
 }
 
 .fondo1 {
-  background-color: #FF6B00;
+  background-color: #ff6b00;
   color: white;
   width: 160px;
   height: 40px;
@@ -155,15 +192,4 @@ a.ms-2.link-energias-boton {
 
 .fondo1:hover {
   background-color: rgb(190, 161, 107);
-}
-.juntos {
-  color:black;
-  background-color: #E4E9F3;
-  
-}
-.cardjuntos {
-  background-color: #E4E9F3;
-}
-.cardconocer {
-  background-color: #E4E9F3;
 }
