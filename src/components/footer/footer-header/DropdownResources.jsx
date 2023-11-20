@@ -7,9 +7,11 @@ function DropdownResources() {
         Recursos <i className='fa fa-caret-down'></i>
       </button>
       <div className='dropdown-content'>
-        <a href='#' className='anchor-footer'>
+        <Link to= '/proyectos-caseros' className='anchor-footer' onClick={() => {
+            window.scroll(0, 0);
+          }}>
           Proyectos Caseros
-        </a>
+        </Link>
         <Link
           to='/timeline'
           className='anchor-footer'

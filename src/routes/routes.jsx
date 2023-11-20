@@ -8,6 +8,8 @@ import EnergiaSolar from '../layouts/energia-solar/EnergiaSolar';
 import Timeline from '../components/timeline_2/Timeline_2';
 import Noticias from '../layouts/Noticias/Noticias';
 import AboutUs from '../layouts/about-us/AboutUs';
+import Documents from '../components/recursospdf/CardRoute';
+
 
 const routes = createBrowserRouter([
   {
@@ -43,6 +45,10 @@ const routes = createBrowserRouter([
     path: '/about-us',
     element: <AboutUs />,
   },
+  {
+    path: '/proyectos-caseros',
+    element: <Documents />,
+  }
 ]);
 
 export default routes;
