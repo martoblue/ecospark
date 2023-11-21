@@ -166,3 +166,13 @@
     background: var(--second-bg-color);
   }
 }
+@media screen and (max-width: 1222px) {
+  .anchor-navbar {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 875px) {
+  .anchor-navbar {
+    font-size: 0.7rem;
+  }
+}

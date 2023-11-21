@@ -40,12 +40,12 @@ function Signup() {
       email: email,
       password: password,
     };
-    /*
-  document.getElementById("name").value = "";
-  document.getElementById("lastName").value = "";
-  document.getElementById("email").value = "";
-  document.getElementById("password").value = "";
-*/
+
+    document.getElementById('name').value = '';
+    document.getElementById('lastName').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('password').value = '';
+
     //5to paso Fetch
     fetch('http://localhost:8080/api/v1/crear', {
       method: 'POST',
@@ -57,22 +57,25 @@ function Signup() {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        /*setName("");
-    setLastName("");
-    setEmail("");
-    setPassword("");*/
+        setName('');
+        setLastName('');
+        setEmail('');
+        setPassword('');
         if (data.status === 201) setUserCreate(true);
       })
       .catch((error) => {
         console.error('error:', error);
       });
   };
+  useEffect(() => {
+    if (userCreate) {
+      navigate('/login');
+    }
+  }, [navigate, userCreate]);
 
   return (
     <>
-      <div
-        className='signup template d-flex justify-content-center align-items-center vh-100 fondo'
-      >
+      <div className='signup template d-flex justify-content-center align-items-center vh-100 fondo'>
         <div className='form_container p-5 rounded bg-white'>
           <form>
             <h3 className='text-center'>Registrarse</h3>
@@ -82,6 +85,7 @@ function Signup() {
                 type='text'
                 placeholder='Ingrese su nombre'
                 className='form-control'
+                id='name'
                 onChange={handleName} //Parte de union Backend  2DA parte
               />
             </div>
@@ -90,6 +94,7 @@ function Signup() {
               <input
                 type='text'
                 placeholder='Ingrese su apellido'
+                id='lastName'
                 className='form-control'
                 onChange={handleLastName} //Parte de union Backend 2DA parte
               />
@@ -100,6 +105,7 @@ function Signup() {
                 type='email'
                 placeholder='Ingrese su email'
                 className='form-control'
+                id='email'
                 onChange={handleEmail} //Parte de union Backend 2DA parte
               />
             </div>
@@ -109,6 +115,7 @@ function Signup() {
                 type='password'
                 placeholder='Ingrese nueva contraseña'
                 className='form-control'
+                id='password'
                 onChange={handlePassword} //Parte de union Backend 2DA parte
               />
             </div>

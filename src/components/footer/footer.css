@@ -202,6 +202,9 @@ p.title-about-footer {
 .title-href:hover {
   color: var(--second-text-color);
 }
+span.session-footer {
+  padding: 1rem;
+}
 
 .mision {
   font-size: 1.3rem;

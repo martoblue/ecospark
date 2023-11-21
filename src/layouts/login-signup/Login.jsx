@@ -1,12 +1,15 @@
 import './login-signup-style.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 function Login() {
+  const navigate = useNavigate();
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [user, setUser] = useState({});
+  const [userLoggeado, setUserLoggeado] = useState({});
   const [userLocal, setUserLocal] = useState({});
+  const [userNavigate, setUserNavigate] = useState(false);
 
   const handleEmail = (e) => {
     setEmail(e.target.value);
@@ -31,10 +34,8 @@ function Login() {
       password: password,
     };
 
-    /*
-document.getElementById("email").value = "";
-document.getElementById("password").value = "";
-*/
+    document.getElementById('email').value = '';
+    document.getElementById('password').value = '';
 
     fetch('http://localhost:8080/api/v1/login', {
       method: 'POST',
@@ -46,22 +47,38 @@ document.getElementById("password").value = "";
     })
       .then((response) => response.json())
       .then((data) => {
-        setUser(data);
+        setEmail('');
+        setPassword('');
+        setUserLoggeado(data);
         localStorage.setItem('token', JSON.stringify(data.token));
+      })
+      .catch((error) => {
+        console.error('error:', error);
       });
   };
 
+  if (userLoggeado.status === 200) {
+    setTimeout(() => {
+      setUserNavigate(true);
+    }, 3000);
+  }
   useEffect(() => {
-    if (user.status === 200) {
-      localStorage.setItem('user', JSON.stringify(user.data));
+    if (userLoggeado.status === 200) {
+      localStorage.setItem('user', JSON.stringify(userLoggeado.data));
     }
-  }, [user]);
+  }, [userLoggeado]);
 
   useEffect(() => {
     if (localStorage.getItem('user') !== null) {
       setUserLocal(JSON.parse(localStorage.getItem('user')));
     }
-  }, [user]);
+  }, [userLoggeado]);
+
+  useEffect(() => {
+    if (userNavigate) {
+      navigate('/proyectos-caseros');
+    }
+  }, [navigate, userNavigate]);
 
   return (
     <>
@@ -79,6 +96,7 @@ document.getElementById("password").value = "";
                 type='email'
                 placeholder='Ingrese su Email'
                 className='form-control'
+                id='email'
                 onChange={handleEmail}
               />
             </div>
@@ -90,6 +108,7 @@ document.getElementById("password").value = "";
                 type='password'
                 placeholder='Ingrese su contraseña'
                 className='form-control'
+                id='password'
                 onChange={handlePassword}
               />
             </div>
@@ -132,20 +151,16 @@ document.getElementById("password").value = "";
                   </strong>
                 </p>
                 <p className='justi-textosession'>
-                  "A continuación.Verás la trayectoria de nuestro proyecto,
-                  donde podrás observar los grandes avances que hemos tenido a
-                  lo largo del tiempo. Disfruta el viaje"
+                  "A continuación serás redirigido a la página de descarga de
+                  proyectos caseros."
                 </p>
-                <Link to='/timeline'>
-                  <p className='text-center'>¡Ingresa AQUI!</p>
-                </Link>
                 <div className='Desconectar-sesion'>
                   <button
                     type='button'
                     className='btn btn-primary'
                     onClick={handleLogout}
                   >
-                    Desconectar{' '}
+                    Desconectar
                   </button>
                 </div>
               </div>
