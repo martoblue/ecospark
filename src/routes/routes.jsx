@@ -6,6 +6,7 @@ import ErrorPage from '../../error-page';
 import EnergiaEolica from '../layouts/energia-eolica/EnergiaEolica';
 import EnergiaSolar from '../layouts/energia-solar/EnergiaSolar';
 import Timeline from '../components/timeline_2/Timeline_2';
+import Primera from '../layouts/login-signup/prueba-actualizar';
 
 const routes = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const routes = createBrowserRouter([
   {
     path: '/energia-solar',
     element: <EnergiaSolar />,
+  },
+  {
+    path: '/energia-encuesta',
+    element: <Primera />
   },
 ]);
 
