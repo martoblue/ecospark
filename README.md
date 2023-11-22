@@ -9,6 +9,7 @@ Una organización cuyo propósito es encender la chispa de interés por un mundo
 3. npm install --save chrono-node
 4. ----backend----
 5. npm i body-parser cors dotenv express express-validator formidable fs lodash mongoose morgan jsonwebtoken
+6. npm i nodemon -g
 
 ## To run frontend or backend apps
 
