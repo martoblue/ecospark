@@ -1,11 +1,7 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
-
-// Componentes Propios //
+import React, { Component } from 'react';
 import Navbar from '../../components/navbar/Navbar';
 import Footer from '../../components/footer/Footer';
 import NoticiasFilter from '../../components/noticias/NoticiasFilter';
-import { Component } from 'react';
 
 class Noticias extends Component {
   state = {
@@ -23,9 +19,13 @@ class Noticias extends Component {
     fetch(url)
       .then((respuesta) => respuesta.json())
       .then((noticias) => {
-        console.log(noticias);
+        const noticiasSinAutor = noticias.articles.map((noticia) => {
+          const { author, ...restoNoticia } = noticia; // Filtra el campo del autor
+          return restoNoticia;
+        });
+
         this.setState({
-          noticias: noticias.articles,
+          noticias: noticiasSinAutor,
         });
       });
   };
@@ -35,7 +35,6 @@ class Noticias extends Component {
       <>
         <Navbar />
         <div className='container mt-5'>
-          {/* Corrige la propiedad 'Noticias' a 'noticias' */}
           <NoticiasFilter noticias={this.state.noticias} />
         </div>
         <Footer />

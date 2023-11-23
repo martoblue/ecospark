@@ -9,6 +9,8 @@ import Timeline from '../components/timeline_2/Timeline_2';
 import Noticias from '../layouts/Noticias/Noticias';
 import AboutUs from '../layouts/about-us/AboutUs';
 import Documents from '../components/recursospdf/CardRoute';
+import VideosComponent from '../components/videos/videos';
+
 
 
 const routes = createBrowserRouter([
@@ -48,6 +50,10 @@ const routes = createBrowserRouter([
   {
     path: '/proyectos-caseros',
     element: <Documents />,
+  },
+  {
+    path: '/videos',
+    element: <VideosComponent />,
   }
 ]);
 

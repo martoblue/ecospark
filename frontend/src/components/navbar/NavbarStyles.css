@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Poppins:wght@200;300;400;500;600;700;900&&display=swap');
 
-:root {
+
+.Navbar {
   --main-bg-color: #ff6b00;
   --main-text-color: #eeedec;
   --second-bg-color: #eeedec;
@@ -8,9 +9,13 @@
   --font-family: 'Poppins', sans-serif;
   --font-logo: 'Patua One', serif;
 }
-/* NavbarStyles.css */
+
+  /* Resto de estilos para Navbar usando estas variables */
+
 .main-navbar {
   background-color: transparent;
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
   color: var(--main-text-color);
 }
 .section-navbar {
@@ -80,7 +85,7 @@
 
 .dropdown-navbar {
   cursor: pointer;
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
 }
 .dropdown-content-energias {
   display: none;
@@ -151,7 +156,7 @@
 }
 
 /* Keyframes */
-@-webkit-keyframes fill {
+@keyframes fill {
   0% {
     width: 0%;
     height: 5px;
@@ -176,3 +181,4 @@
     font-size: 0.7rem;
   }
 }
+

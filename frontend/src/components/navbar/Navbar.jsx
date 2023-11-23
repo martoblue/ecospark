@@ -45,7 +45,19 @@ function Navbar({ text }) {
             Inicio
           </Link>
         </li>
+        <li>
         <DropdownEnergies />
+        </li>
+        <li>
+          <Link className='anchor-navbar' to='/videos'>
+            Videos
+          </Link>
+        </li>
+        <li>
+          <Link className='anchor-navbar' to='/proyectos-caseros'>
+            Proyectos
+          </Link>
+        </li>
         <li>
           <Link className='anchor-navbar' to='/timeline'>
             Timeline
